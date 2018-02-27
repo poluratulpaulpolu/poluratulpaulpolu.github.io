@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+    var A = document.forms["myForm"]["fname"].value;
+    if (A == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    
+    var B = document.forms["myForm"]["fID"].value;
+    if (B == "") {
+        alert("Number must be filled out");
+        return false;
+    }
+    
+     var C = document.forms["myForm"]["fAge"].value;
+    if (C == "") {
+        alert("Number must be filled out");
+        return false;
+    }
+    
+     var D = document.forms["myForm"]["fNumber"].value;
+    if (D == "") {
+        alert("number must be filled out");
+        return false;
+    }
+    
+     var E = document.forms["myForm"]["faddress"].value;
+    if (E == "") {
+        alert("text must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<br/>
+<br/>
+ID: <input type="Text-Number" ID="fID">
+<br/>
+<br/>
+Age: <input type="Number" Age="fAge">
+<br/>
+<br/>
+Number: <input type="number" Number="fNumber">
+<br/>
+<br/>
+Address: <input type="Text-Number" Address="fAddress">
+<br/>
+<br/>
+<input type="submit" value="Submit">
+</form>
+
+
+
+</body>
+</html>
